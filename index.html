@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="table_script.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <table align="center" cellspacing="2" cellpadding="5" id="data_table" border="1">
+            <tr>
+                <th>Student Name</th>
+                <th>Student Id</th>
+                <th>Marks</th>
+            </tr>
+
+            <tr id="row1">
+                <td id="name_row1">Lahari</td>
+                <td id="ids_row1">121</td>
+                <td id="marks_row1">98</td>
+                <td>
+                    <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')" />
+                    <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')" />
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('1')" />
+                </td>
+            </tr>
+
+            <tr id="row2">
+                <td id="name_row2">Riya</td>
+                <td id="ids_row2">122</td>
+                <td id="marks_row2">86</td>
+                <td>
+                    <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')" />
+                    <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')" />
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('2')" />
+                </td>
+            </tr>
+
+            <tr id="row3">
+                <td id="name_row3">Priya</td>
+                <td id="ids_row3">123</td>
+                <td id="marks_row3">79</td>
+                <td>
+                    <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')" />
+                    <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')" />
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('3')" />
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="new_name" /></td>
+                <td><input type="number" id="new_ids" /></td>
+                <td><input type="number" id="new_marks" /></td>
+                <td>
+                    <input type="button" class="add" onclick="add_row();" value="Add Row" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
